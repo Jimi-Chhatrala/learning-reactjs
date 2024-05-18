@@ -29,6 +29,7 @@ import HookUseRef2 from "./HookUseRef2";
 // import Comp2 from "./Comp2";
 
 import React, { Suspense, lazy, createContext, useState } from "react";
+import Validation from "./Validation";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -59,13 +60,14 @@ function App() {
 
   return (
     <div>
-      <h1>Lazy Loading Demo</h1>
+      <Validation />
+      {/* <h1>Lazy Loading Demo</h1>
       <Suspense fallback={<div>LOADING... Comp 1</div>}>
         <Comp1 />
       </Suspense>
       <Suspense fallback={<div>LOADING... Comp 2</div>}>
         <Comp2 />
-      </Suspense>
+      </Suspense> */}
       {/* <HookUseRef2 /> */}
       {/* <HookuseRef /> */}
       {/* <CallbackRefComp /> */}

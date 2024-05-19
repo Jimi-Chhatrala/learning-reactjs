@@ -30,6 +30,8 @@ import HookUseRef2 from "./HookUseRef2";
 
 import React, { Suspense, lazy, createContext, useState } from "react";
 import Validation from "./Validation";
+import FormikForm from "./FormikForm";
+import FormikForm2 from "./FormikForm2";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -60,7 +62,9 @@ function App() {
 
   return (
     <div>
-      <Validation />
+      <FormikForm2 />
+      {/* <FormikForm /> */}
+      {/* <Validation /> */}
       {/* <h1>Lazy Loading Demo</h1>
       <Suspense fallback={<div>LOADING... Comp 1</div>}>
         <Comp1 />

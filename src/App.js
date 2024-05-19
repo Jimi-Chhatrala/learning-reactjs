@@ -32,6 +32,8 @@ import React, { Suspense, lazy, createContext, useState } from "react";
 import Validation from "./Validation";
 import FormikForm from "./FormikForm";
 import FormikForm2 from "./FormikForm2";
+import ReactBS from "./ReactBS";
+import GridBS from "./GridBS";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -62,7 +64,9 @@ function App() {
 
   return (
     <div>
-      <FormikForm2 />
+      <GridBS />
+      {/* <ReactBS /> */}
+      {/* <FormikForm2 /> */}
       {/* <FormikForm /> */}
       {/* <Validation /> */}
       {/* <h1>Lazy Loading Demo</h1>

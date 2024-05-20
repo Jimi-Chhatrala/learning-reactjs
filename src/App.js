@@ -34,6 +34,9 @@ import FormikForm from "./FormikForm";
 import FormikForm2 from "./FormikForm2";
 import ReactBS from "./ReactBS";
 import GridBS from "./GridBS";
+import ImagesDemo from "./ImagesDemo";
+import CardsBS from "./CardsBS";
+import MyNavbar from "./MyNavbar";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -64,7 +67,10 @@ function App() {
 
   return (
     <div>
-      <GridBS />
+      <MyNavbar />
+      {/* <CardsBS /> */}
+      {/* <ImagesDemo /> */}
+      {/* <GridBS /> */}
       {/* <ReactBS /> */}
       {/* <FormikForm2 /> */}
       {/* <FormikForm /> */}

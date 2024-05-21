@@ -37,6 +37,8 @@ import GridBS from "./GridBS";
 import ImagesDemo from "./ImagesDemo";
 import CardsBS from "./CardsBS";
 import MyNavbar from "./MyNavbar";
+import MyCarousel from "./MyCarousel";
+import Reducers from "./Reducers";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -67,7 +69,9 @@ function App() {
 
   return (
     <div>
-      <MyNavbar />
+      <Reducers />
+      {/* <MyCarousel /> */}
+      {/* <MyNavbar /> */}
       {/* <CardsBS /> */}
       {/* <ImagesDemo /> */}
       {/* <GridBS /> */}

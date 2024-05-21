@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Promise</title>
+  </head>
+  <body>
+    <script>
+      let p = new Promise(function (resolve, reject) {
+        document.write("Pending..");
+        setTimeout(() => {
+          let a = 1 + 2;
+
+          if (a == 3) {
+            resolve("Success");
+          } else {
+            reject("Failed");
+          }
+        }, 3000);
+      });
+
+      let onFullFill = (msg) => {
+        document.write(msg + " = Promise Fulfilled..");
+      };
+
+      let onReject = (msg) => {
+        document.write(msg + " = Promise Rejected..");
+      };
+
+      p.then(onFullFill).catch(onReject);
+      // p.then((msg) => {
+      //   document.write(msg + " = Promise Fulfilled..");
+      // }).catch((msg) => {
+      //   document.write(msg + " = Promise Rejected..");
+      // });
+      // console.log(p);
+    </script>
+  </body>
+</html>

@@ -39,6 +39,7 @@ import CardsBS from "./CardsBS";
 import MyNavbar from "./MyNavbar";
 import MyCarousel from "./MyCarousel";
 import Reducers from "./Reducers";
+import FetchAPI from "./FetchAPI";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -69,7 +70,8 @@ function App() {
 
   return (
     <div>
-      <Reducers />
+      <FetchAPI />
+      {/* <Reducers /> */}
       {/* <MyCarousel /> */}
       {/* <MyNavbar /> */}
       {/* <CardsBS /> */}

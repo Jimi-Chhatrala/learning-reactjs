@@ -29,6 +29,18 @@ import HookUseRef2 from "./HookUseRef2";
 // import Comp2 from "./Comp2";
 
 import React, { Suspense, lazy, createContext, useState } from "react";
+import Validation from "./Validation";
+import FormikForm from "./FormikForm";
+import FormikForm2 from "./FormikForm2";
+import ReactBS from "./ReactBS";
+import GridBS from "./GridBS";
+import ImagesDemo from "./ImagesDemo";
+import CardsBS from "./CardsBS";
+import MyNavbar from "./MyNavbar";
+import MyCarousel from "./MyCarousel";
+import Reducers from "./Reducers";
+import FetchAPI from "./FetchAPI";
+import StateCity2 from "./StateCity2";
 
 const Comp1 = lazy(() => import("./Comp1"));
 const Comp2 = lazy(() => import("./Comp2"));
@@ -59,13 +71,24 @@ function App() {
 
   return (
     <div>
-      <h1>Lazy Loading Demo</h1>
+      {/* <FetchAPI /> */}
+      {/* <Reducers /> */}
+      {/* <MyCarousel /> */}
+      {/* <MyNavbar /> */}
+      {/* <CardsBS /> */}
+      {/* <ImagesDemo /> */}
+      {/* <GridBS /> */}
+      {/* <ReactBS /> */}
+      {/* <FormikForm2 /> */}
+      {/* <FormikForm /> */}
+      {/* <Validation /> */}
+      {/* <h1>Lazy Loading Demo</h1>
       <Suspense fallback={<div>LOADING... Comp 1</div>}>
         <Comp1 />
       </Suspense>
       <Suspense fallback={<div>LOADING... Comp 2</div>}>
         <Comp2 />
-      </Suspense>
+      </Suspense> */}
       {/* <HookUseRef2 /> */}
       {/* <HookuseRef /> */}
       {/* <CallbackRefComp /> */}
@@ -73,6 +96,7 @@ function App() {
       {/* <RefComponent /> */}
       {/* <MultipleChecks /> */}
       {/* <StateCity /> */}
+      <StateCity2 />
       {/* <OtherInputs /> */}
       {/* <FunctionInputs /> */}
       {/* <MultipleInputs /> */}

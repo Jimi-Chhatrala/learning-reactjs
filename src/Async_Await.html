@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Async Await</title>
+  </head>
+  <body>
+    <script>
+      async function example() {
+        const data = await fetch("http://jsonplaceholder.typicode.com/posts");
+        const posts = await data.json();
+        return posts;
+      }
+
+      example()
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+
+      // FETCH - CALLING API
+
+      // async function example() {
+      //   console.log("Hello 1");
+      //   const data = await fetch("http://jsonplaceholder.typicode.com/posts");
+      //   console.log("Hello 2");
+      //   const posts = await data.json();
+      //   console.log("Hello 3");
+      //   return posts;
+      // }
+
+      // let a = example();
+      // console.log(a);
+      // console.log("Hello 4");
+      // console.log("Hello 5");
+
+      // async function example() {
+      //   console.log("Hello 1");
+      //   await console.log("Hello 2");
+      //   console.log("Hello 3");
+      // }
+
+      // example();
+      // console.log("Hello 4");
+      // console.log("Hello 5");
+
+      // async function example() {
+      //   return "Hello World";
+      // }
+      // console.log(example());
+
+      // console.log("Hello 1");
+      // setTimeout(() => {
+      //   console.log("Hello 2");
+      // }, 3000);
+      // console.log("Hello 3");
+    </script>
+  </body>
+</html>

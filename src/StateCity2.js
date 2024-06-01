@@ -1,3 +1,4 @@
+import { element } from "prop-types";
 import React, { useState } from "react";
 
 const citiesData = [
@@ -24,10 +25,14 @@ const StateCity2 = () => {
         value={selectedState}
         onChange={handleStateChange}
       >
-        <option value="">Select State</option>
-        <option value="Gujarat">Gujarat</option>
-        <option value="Rajasthan">Rajasthan</option>
-        <option value="Goa">Goa</option>
+        <option value="">Select a state</option>
+        {citiesData.map((element, index) => (
+          <option value={element.state}>{element.state}</option>
+        ))}
+
+        {/* <option value="Gujarat">Gujarat</option> */}
+        {/* <option value="Rajasthan">Rajasthan</option> */}
+        {/* <option value="Goa">Goa</option> */}
       </select>
       {selectedState && selectedCities.length > 0 && (
         <div>
